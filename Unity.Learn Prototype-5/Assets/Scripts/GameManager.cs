@@ -79,6 +79,10 @@ public class GameManager : MonoBehaviour
             restartButton.gameObject.SetActive(true);
         }   
     }
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
     public void OnClickRestartFunction()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
